@@ -1,0 +1,13 @@
+.profile{
+    display: flex;
+    /* flex-wrap: wrap; */
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.avatar{
+    border-radius: 100%;
+    width: 16rem;
+    height: 15rem;
+    float: left;
+}

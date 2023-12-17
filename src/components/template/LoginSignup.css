@@ -1,0 +1,23 @@
+.registerImage>input::file-selector-button {
+  cursor: pointer;
+  width: 100%;
+  z-index: 2;
+  height: 5vh;
+  border: none;
+  border-radius: 22px;
+  margin: 0%;
+  font: 400 0.8vmax cursive;
+  transition: all 0.5s;
+  padding: 0 1vmax;
+  color: black;
+  background-color: wheat;
+}
+.registerImage{
+  text-align: center;
+}
+.avatarPreview {
+  width: 13vmax;
+  border-radius: 50%;
+  height: 12vmax;
+  margin-bottom: 12px;
+}
