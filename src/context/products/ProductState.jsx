@@ -18,7 +18,7 @@ const ProductState = (props) => {
 
             const url = 'https://fakestoreapi.com/products/';
             const response = await fetch(url,{
-                mode: 'no-cors'
+                // mode: 'no-cors'
             });
 
             if (response.ok) {

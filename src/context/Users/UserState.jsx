@@ -4,7 +4,7 @@ import Cookies from "js-cookie";
 
 
 const initialState = {
-  user: {
+  signbody: {
     name: "",
     email: "",
     password: "",
@@ -25,30 +25,28 @@ const reducer = (state, action) => {
     case actionTypes.SET_LOGIN_BODY:
       return { ...state, loginbody: action.payload };
     case actionTypes.LOGIN:
-      // Add your login logic here
       return { ...state, isLoggedIn: true, alertIn: true };
     case actionTypes.LOGOUT:
-      // Add your logout logic here
       return { ...state, isLoggedIn: false, alertOut: true };
+    case actionTypes.LOGGEDIN:
+      return {...state, isLoggedIn:false};
     case actionTypes.SIGNUP:
-      // Add your signup logic here
       return { ...state, isLoggedIn: true, alertIn: true };
     case actionTypes.REGISTER_DATA_CHANGE:
         if (action.payload.name === "avatar") {
           return {
             ...state,
             avatarPreview: action.payload.avatarPreview,
-            user: { ...state.user, [action.payload.name]: action.payload.value },
+            signbody: { ...state.user, [action.payload.name]: action.payload.value },
           };
         } else {
           return {
             ...state,
-            user: { ...state.user, [action.payload.name]: action.payload.value },
+            signbody: { ...state.user, [action.payload.name]: action.payload.value },
           };
         }
     case actionTypes.USER_DATA:
-      // Add your userData logic here
-      return { ...state, loggeduser: action.payload };
+      return { ...state,isLoggedIn:true, loggeduser : action.payload };
     default:
       return state;
   }
@@ -185,7 +183,14 @@ const UserState = (props) => {
     };
   
     window.addEventListener("load", handleonload);
-  
+    
+    if (Cookies.get("token")) {
+      dispatch({type:actionTypes.LOGGEDIN, payload:true});
+    }
+    else{
+      dispatch({type:actionTypes.LOGGEDIN, payload:false});
+    }
+
     return () => {
       window.removeEventListener("load", handleonload);
     };

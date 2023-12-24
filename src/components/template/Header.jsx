@@ -20,7 +20,7 @@ const Header = () => {
     login,
     logout,
     signup,
-    user,
+    signbody,
     avatarPreview,
     userData,
   } = useContext(UserContext);
@@ -30,7 +30,7 @@ const Header = () => {
   const [password1, setPassword1] = useState("");
 
   // for signup
-  const { name, email, password } = user;
+  const { name, email, password } = signbody;
 
   // const loginbody = {
   //   email: email1,
@@ -39,11 +39,6 @@ const Header = () => {
 
   const handleLogin = async (e) => {
     e.preventDefault();
-    
-    // Dispatch SET_LOGIN_BODY action
-    // dispatch({ type: actionTypes.SET_LOGIN_BODY, payload: loginbody });
-  
-    // Call the login function from UserState.jsx
     await login(e);
   };
 
@@ -84,36 +79,12 @@ const Header = () => {
       });
     }
   };
+  
   return (
     <>
       <div className="head-top" id="top">
         <p className="slogan">Free Shipping For All Products</p>
         <ul className="navbar-nav navitem mb-2 mb-lg-0">
-          <li className="nav-item1" id="navbaritem12">
-            {/* <button
-              className="nav-link btn"
-              data-bs-toggle="modal"
-              data-bs-target="#exampleModal"
-            >
-              Login
-            </button> */}
-            {!isLoggedIn && !Cookies.get("token") ? (<button
-              className="nav-link btn"
-              data-bs-toggle="modal"
-              data-bs-target="#exampleModal"
-            >
-              Login
-            </button>) : (
-                    <>
-                      <button onClick={logout} className={`nav-link btn`} >
-                        logout
-                      </button>
-                      <Link to="/profile" >
-                        <FontAwesomeIcon icon={faUser} size="xl" className="ms-3 mt-1" style={{ cursor: 'pointer',color:'black' }} onClick={userData}/>
-                      </Link>
-                    </>
-                  )}
-          </li>
           <li className="nav-item1">
             <Link className="nav-link" to="/">
               Cart
@@ -128,6 +99,24 @@ const Header = () => {
             <Link className="nav-link" to="/">
               Checkout
             </Link>
+          </li>
+          <li className="nav-item1" id="navbaritem12">
+            {!isLoggedIn && !Cookies.get("token") ? (<button
+              className="nav-link btn"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+            >
+              Login
+            </button>) : (
+                    <>
+                      <Link to="/profile" >
+                        <FontAwesomeIcon icon={faUser} size="xl" className="user-icon" onClick={userData}/>
+                      </Link>
+                      <button onClick={logout} className={`nav-link btn logout-btn`} >
+                        logout
+                      </button>
+                    </>
+                  )}
           </li>
         </ul>
       </div>

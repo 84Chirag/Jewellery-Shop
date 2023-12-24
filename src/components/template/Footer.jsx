@@ -47,7 +47,7 @@ const Footer = () => {
             <div className='footer'>
                 <div className='container footcontent'>
                     <div className="foot1"><p>Copyright © 2023 <a href="#">Chirag Gour</a><br /> All rights reserved. </p></div>
-                    <div className="foot2">
+                    {/* <div className="foot2">
                         <ul className='menulist'>
                             <h5>Useful Links</h5>
                             <li className='menuitem'><a href='#'>Home</a></li>
@@ -55,11 +55,11 @@ const Footer = () => {
                             <li className='menuitem'><a href='#'>Store</a></li>
                             <li className='menuitem'><a href='#'>Contact</a></li>
                         </ul>
-                    </div>
+                    </div> */}
                     <div className="foot3">
                         <h5><b>Contact Us</b></h5>
                         <div className="contact">
-                            <p><a href='https://maps.app.goo.gl/QmNvRuVEZjBKbNAx7' target='_blank' ><FontAwesomeIcon icon={faShop} /> Ghatkopar </a></p>
+                            <p><a href='https://maps.app.goo.gl/QmNvRuVEZjBKbNAx7' target='_blank' ><FontAwesomeIcon icon={faShop} /> Mumbai </a></p>
                             <p><a href="tel:+1234567890"><FontAwesomeIcon icon={faPhone} /> +91 820 882 0220 </a></p>
                         </div>
                     </div>
