@@ -167,7 +167,8 @@ const UserState = (props) => {
     const response = await fetch(url, {
       method: "GET",
       headers:{
-        "Cookie":`${Cookies.get("token")}`
+        // "Cookie":`${Cookies.get("token")}`
+        Authorization: `${Cookies.get("token")}`,
       },
       credentials: "include",
     });
