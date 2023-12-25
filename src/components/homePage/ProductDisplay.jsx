@@ -14,11 +14,11 @@ const ProductDisplay = (props) => {
             {/* </div>
             </div> */}
             <div className='Homepageproduct'>
-                <Link to='' className='addcart1'><FontAwesomeIcon icon={faCartShopping} style={{ color: "black", }} /></Link>
+                <Link to='' className='addcart1'><FontAwesomeIcon icon={faCartShopping} style={{ color: "black", }} className='shopbtn' /></Link>
                 <Link to={`/store/product/${props.product.id}`} className="viewproduct1">
                     <img src={props.product.image} alt="product" className='cardimage' />
                     <div className="text-center mt-3">
-                        <h4>{props.product.title}</h4>
+                        <h4 className='home-prod-title'>{props.product.title}</h4>
                         <h5 className="pricedollar">${props.product.price}</h5>
                     </div>
                 </Link>

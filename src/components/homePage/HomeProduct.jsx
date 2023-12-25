@@ -28,7 +28,7 @@ const HomeProduct = () => {
     return (
         <div className='container'>
             <h2 className="text-center"><b>Our Products</b></h2>
-            <span></span>
+            <span className='underline'></span>
             {loading ? (<Loader />) : (<div className="prod-holder">
                 {products.map((product) =>
                     (<ProductDisplay key={product.id} product={product} />)

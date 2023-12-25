@@ -164,14 +164,9 @@ const UserState = (props) => {
   
   const userData = async () => {
     const url = "http://localhost:4000/api/v1/profile";
-    const token = Cookies.get("token");
     const response = await fetch(url, {
       method: "GET",
-      credentials: 'include',
-      headers: {
-          'Content-Type': 'application/json',
-          'Cookie': `token=${token}`,
-        },
+      credentials: "include",
     });
     if (response.ok) {
       const json = await response.json();
