@@ -166,7 +166,10 @@ const UserState = (props) => {
     const url = "http://localhost:4000/api/v1/profile";
     const response = await fetch(url, {
       method: "GET",
-      credentials: "include",
+      credentials: 'include',
+      headers: {
+          'Content-Type': 'application/json',
+        },
     });
     if (response.ok) {
       const json = await response.json();
