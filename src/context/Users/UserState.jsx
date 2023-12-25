@@ -166,10 +166,6 @@ const UserState = (props) => {
     const url = "http://localhost:4000/api/v1/profile";
     const response = await fetch(url, {
       method: "GET",
-      headers:{
-        // "Cookie":`${Cookies.get("token")}`
-        Authorization: `${Cookies.get("token")}`,
-      },
       credentials: "include",
     });
     if (response.ok) {
