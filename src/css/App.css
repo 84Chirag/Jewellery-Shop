@@ -188,6 +188,40 @@
   .pricedollar{
     font-size: 15px;
   }
+  .forgottxt {
+    position: absolute;
+    left: 50%;
+    top: 76%;
+  }
+
+  .products{
+    flex-direction: column !important;
+    flex-wrap: nowrap !important;
+    align-items: center;
+  }
+  .products > div {
+    width: 23rem !important;
+  }
+  .breadhead{
+    padding: 0 !important;
+  }
+  .card2{
+    margin: 1px !important;
+    padding: 0 !important;
+    flex-basis: 49% !important;
+  }
+  .card-img-top1 {
+    margin-top: 20px;
+    height: 50% !important;
+    margin-left: 80px !important;
+  }
+  .crumbtitle {
+    flex-basis: 60% !important;
+    margin-left: 6px !important;
+    margin-bottom: 6px !important;
+    font-size: 20px !important;
+    margin-top: 7px !important;
+  }
 }
 
 @media (min-width: 393px) and (max-width: 394px) {
@@ -228,6 +262,11 @@
   .logout-btn {
     margin-left: 0.9rem;
     margin-top: 0.5rem;
+  }
+  .forgottxt {
+    position: absolute;
+    left: 50%;
+    top: 76%;
   }
   .footcontent {
     display: flex;
@@ -279,6 +318,26 @@
     flex-wrap: nowrap !important;
     flex-direction: column;
   }
+  .bannertxt{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .bannertxt1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .bannertxt2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .bannertxt3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
   .bannerimg{
     margin: 5px 8px 10px 11px !important;
   }
@@ -288,7 +347,7 @@
   }
   .textcontent1 {
     margin-left: -165px !important;
-    margin-top: 65px !important;
+    margin-top: 45px !important;
   }
   .textcontent2 {
     margin-left: -180px !important;
@@ -374,6 +433,44 @@
   .pricedollar{
     font-size: 15px;
   }
+  .login-btn{
+    margin-top: 0.5rem;
+  }
+  .products{
+    flex-direction: column !important;
+    flex-wrap: nowrap !important;
+  }
+  .products > div {
+    width: 23rem !important;
+  }
+  .breadhead{
+    padding: 0 !important;
+  }
+  .card2{
+    margin: 1px !important;
+    padding: 0 !important;
+    flex-basis: 49% !important;
+  }
+  .card-img-top1 {
+    margin-top: 20px;
+    height: 50% !important;
+    margin-left: 80px !important;
+  }
+  .crumbtitle {
+    flex-basis: 60% !important;
+    margin-left: 6px !important;
+    margin-bottom: 6px !important;
+    font-size: 20px !important;
+    margin-top: 7px !important;
+  }
+  .detailbody{
+    margin-left: 0 !important;
+    flex-direction: column;
+    align-items: center;
+  }
+  .prod-img{
+    margin-bottom: 15px;
+  }
 }
 
 @media (min-width: 320px) and (max-width: 375px) {
@@ -408,6 +505,11 @@
     padding-top: 10px;
     padding-bottom: 0px;
   }
+
+  .login-btn{
+    margin-top: 0.5rem;
+  }
+  
   .user-icon {
     margin-top: 0.5rem !important;
   }
@@ -559,7 +661,39 @@
   .pricedollar{
     font-size: 15px;
   }
-
+  .forgottxt {
+    position: absolute;
+    left: 50%;
+    top: 76%;
+  }
+  .products{
+    flex-direction: column !important;
+    flex-wrap: nowrap !important;
+    align-items: center;
+  }
+  .products > div {
+    width: 18.5rem !important;
+  }
+  .breadhead{
+    padding: 0 !important;
+  }
+  .card2{
+    margin: 1px !important;
+    padding: 0 !important;
+    flex-basis: 49% !important;
+  }
+  .card-img-top1 {
+    margin-top: 20px;
+    height: 50% !important;
+    margin-left: 80px !important;
+  }
+  .crumbtitle {
+    flex-basis: 55% !important;
+    margin-left: 6px !important;
+    margin-bottom: 6px !important;
+    font-size: 20px !important;
+    margin-top: 7px !important;
+  }
 }
 
 @media screen and (max-width: 393px) {
@@ -951,6 +1085,25 @@
   .Homepageproduct{
     flex-basis: 50% !important;
     margin-right: 0 !important;
+  }
+  .breadhead{
+    padding: 0% !important;
+  }
+  .crumbtitle {
+    margin-left: 0px !important;
+    margin-bottom: 10px !important;
+    margin-top: 10px !important;
+  }
+  .breadcrumb{
+    margin-top: 15px !important;
+  }
+  .card2 {
+    margin: 3px !important;
+    padding: 0px !important;
+    flex-basis: 49% !important;
+  }
+  .card-img-top1{
+    margin-top: 20px;
   }
 }
 

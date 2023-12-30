@@ -80,3 +80,12 @@
     display: flex;
     list-style: none;
 }
+
+@media (min-width: 393px) and (max-width: 394px) {
+    .modal-footer{
+        font-size: 15px;
+    }
+    .modal-footer > p {
+        padding: 0%;
+    }
+}

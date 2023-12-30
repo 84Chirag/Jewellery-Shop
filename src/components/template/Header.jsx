@@ -102,7 +102,7 @@ const Header = () => {
           </li>
           <li className="nav-item1" id="navbaritem12">
             {!isLoggedIn && !Cookies.get("token") ? (<button
-              className="nav-link btn"
+              className="nav-link btn login-btn"
               data-bs-toggle="modal"
               data-bs-target="#exampleModal"
             >
@@ -275,7 +275,7 @@ const Header = () => {
                   minLength={5}
                 />
               </div>
-              <div className="row">
+              <div className="row loginform">
                 <div className="col-sm-6">
                   <input
                     type="submit"

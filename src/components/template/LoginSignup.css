@@ -6,7 +6,7 @@
   border: none;
   border-radius: 22px;
   margin: 0%;
-  font: 400 0.8vmax cursive;
+  font-weight: 400;
   transition: all 0.5s;
   padding: 0 1vmax;
   color: black;
@@ -16,8 +16,8 @@
   text-align: center;
 }
 .avatarPreview {
-  width: 13vmax;
+  width: 20vmax;
   border-radius: 50%;
-  height: 12vmax;
+  height: 20vmax;
   margin-bottom: 12px;
 }
