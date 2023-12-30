@@ -36,7 +36,7 @@ const ProductDetail = () => {
 
   return (
     <div>
-      <h2 className='text-center my-5'>Product Details</h2>
+      <h2 className='text-center my-5 detailhead'>Product Details</h2>
       {loading ? (
         <Loader />
       ) : detailproducts ? (

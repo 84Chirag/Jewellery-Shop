@@ -120,6 +120,7 @@ const Header = () => {
           </li>
         </ul>
       </div>
+
       <nav className="navbar navbar-expand-lg bg-body-tertiary sticky-top">
         <div className="container-fluid container">
           <Link className="navbar-brand" to="/">
@@ -157,14 +158,17 @@ const Header = () => {
                             </li> */}
               <li className="nav-item dropdown">
                 <Link
-                  className={`nav-link dropbtn ${
-                    location.pathname === "/store" ? "active fw-bold" : ""
+                  // className={`nav-link dropbtn ${
+                  className={`nav-link dropdown-toggle ${
+                    location.pathname === "/store" ? "active fw-bold " : ""
                   }`}
                   to="/store"
+                  data-bs-toggle="dropdown" aria-expanded="false"     
                 >
-                  Store
+                  Store 
                 </Link>
-                <ul className="dropdown-content">
+                {/* <ul className="dropdown-content"> */}
+                <ul className="dropdown-menu">
                   <li>
                     <Link
                       className={`dropdown-item ${
@@ -188,9 +192,9 @@ const Header = () => {
                   <li>
                     <Link
                       className={`dropdown-item ${
-                        location.pathname === "/" ? "active fw-bold" : ""
+                        location.pathname === "/store" ? "active fw-bold" : ""
                       }`}
-                      to="/"
+                      to="/store"
                     >
                       Unisex
                     </Link>
