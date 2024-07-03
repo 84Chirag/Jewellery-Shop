@@ -156,25 +156,24 @@ const Header = () => {
               {/* <li className="nav-item">
                                 <Link className={`nav-link ${location.pathname === '/about' ? 'active fw-bold' : ""}`} to="/about">About</Link>
                             </li> */}
-              <li className="nav-item dropdown">
+              <li className="nav-item ">
                 <Link
                   // className={`nav-link dropbtn ${
-                  className={`nav-link dropdown-toggle ${
+                  className={`nav-link active ${
                     location.pathname === "/store" ? "active fw-bold " : ""
                   }`}
-                  to="/store"
-                  data-bs-toggle="dropdown" aria-expanded="false"     
+                  to="/store"   
                 >
-                  Store 
+                  Jewelery 
                 </Link>
                 {/* <ul className="dropdown-content"> */}
-                <ul className="dropdown-menu">
+                {/* <ul className="dropdown-menu">
                   <li>
                     <Link
                       className={`dropdown-item ${
-                        location.pathname === "/" ? "active fw-bold" : ""
+                        location.pathname === "/store" ? "active fw-bold" : ""
                       }`}
-                      to="/"
+                      to="/store"
                     >
                       Men's
                     </Link>
@@ -182,9 +181,9 @@ const Header = () => {
                   <li>
                     <Link
                       className={`dropdown-item ${
-                        location.pathname === "/" ? "active fw-bold" : ""
+                        location.pathname === "/store" ? "active fw-bold" : ""
                       }`}
-                      to="/"
+                      to="/store"
                     >
                       Women's
                     </Link>
@@ -199,7 +198,7 @@ const Header = () => {
                       Unisex
                     </Link>
                   </li>
-                </ul>
+                </ul> */}
               </li>
               <li className="nav-item">
                 <Link
